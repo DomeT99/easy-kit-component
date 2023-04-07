@@ -1,0 +1,21 @@
+@mixin generate-color($textColor, $bgColor) {
+  @if $textColor {
+    color: $textColor;
+  }
+
+  @if $bgColor {
+    background-color: $bgColor;
+  }
+}
+
+.is-primary {
+  @include generate-color($textColor: #000, $bgColor: #00bdec);
+}
+
+.is-secondary {
+  @include generate-color($textColor: #000, $bgColor: #ffeb35);
+}
+
+.is-tertiary {
+  @include generate-color($textColor: #ffffff, $bgColor: #9d28fd);
+}

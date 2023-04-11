@@ -10,6 +10,7 @@ interface Button {
 }
 const props = defineProps<Button>();
 </script>
+
 <template>
   <button
     :type="props.type ?? 'button'"
@@ -21,3 +22,4 @@ const props = defineProps<Button>();
     <slot></slot>
   </button>
 </template>
+

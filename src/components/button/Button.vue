@@ -23,3 +23,8 @@ const props = defineProps<Button>();
   </button>
 </template>
 
+<script lang="ts">
+export default {
+  name: "EButton",
+};
+</script>

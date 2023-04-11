@@ -1,5 +1,5 @@
 import { VueWrapper, mount } from "@vue/test-utils";
-import EButton from "./EButton.vue";
+import EButton from "./Button.vue";
 import { beforeEach, describe, expect, it } from "vitest";
 
 describe("EButton suite", () => {

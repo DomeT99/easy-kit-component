@@ -14,7 +14,7 @@ const props = defineProps<Button>();
 <template>
   <button
     :type="props.type ?? 'button'"
-    :class="customClasses ?? 'button is-primary'"
+    :class="customClasses ?? 'e-button'"
     :disabled="props.disabled ?? false"
     :autofocus="props.autoFocus ?? false"
     :form="props.formId ?? undefined"
@@ -25,6 +25,6 @@ const props = defineProps<Button>();
 
 <script lang="ts">
 export default {
-  name: "EButton",
+  name: "EButton"
 };
 </script>

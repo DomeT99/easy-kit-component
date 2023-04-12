@@ -21,3 +21,9 @@ function updateModelValue(event: Event) {
     :placeholder="props.placeHolder ?? ''"
   />
 </template>
+
+<script lang="ts">
+export default {
+  name: "EInput",
+};
+</script>

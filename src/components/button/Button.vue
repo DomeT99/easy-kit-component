@@ -17,9 +17,3 @@ const props = defineProps<ButtonProps>();
     <slot></slot>
   </button>
 </template>
-
-<script lang="ts">
-export default {
-  name: "EButton",
-};
-</script>

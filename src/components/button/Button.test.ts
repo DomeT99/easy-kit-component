@@ -5,6 +5,7 @@ import { describe, expect, it, vi } from "vitest";
 let wrapper;
 
 describe("EButton suite", () => {
+
   it("render correctly", () => {
     wrapper = mount(EButton);
     expect(wrapper.html()).toMatchSnapshot();

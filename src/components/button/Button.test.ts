@@ -5,9 +5,9 @@ import { describe, expect, it, vi } from "vitest";
 let wrapper;
 
 describe("EButton suite", () => {
-
   it("render correctly", () => {
     wrapper = mount(EButton);
+
     expect(wrapper.html()).toMatchSnapshot();
   });
 
@@ -17,11 +17,13 @@ describe("EButton suite", () => {
         customClasses: undefined,
       },
     });
+
     expect(wrapper.classes()).toEqual(["e-button"]);
   });
 
   it("trigger click event", () => {
     const click = vi.fn();
+
     wrapper = mount(EButton, {
       listeners: {
         click: click(),

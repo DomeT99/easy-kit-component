@@ -1,0 +1,1 @@
+export type CustomClasses = string[] | object;

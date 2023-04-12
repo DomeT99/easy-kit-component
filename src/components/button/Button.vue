@@ -1,20 +1,15 @@
 <script setup lang="ts">
-type ButtonType = "button" | "submit" | "reset";
+import { Button } from "../../types/components/Button";
 
-interface Button {
-  type?: ButtonType;
-  disabled?: boolean;
-  formId?: string;
-  autoFocus?: boolean;
-  customClasses?: string[] | object;
-}
-const props = defineProps<Button>();
+interface ButtonProps extends Button {}
+
+const props = defineProps<ButtonProps>();
 </script>
 
 <template>
   <button
     :type="props.type ?? 'button'"
-    :class="customClasses ?? 'e-button'"
+    :class="props.customClasses ?? 'e-button'"
     :disabled="props.disabled ?? false"
     :autofocus="props.autoFocus ?? false"
     :form="props.formId ?? undefined"
@@ -25,6 +20,6 @@ const props = defineProps<Button>();
 
 <script lang="ts">
 export default {
-  name: "EButton"
+  name: "EButton",
 };
 </script>

@@ -4,11 +4,12 @@ export interface Input {
   type?: InputType;
   placeHolder?: string;
   customClasses?: CustomClasses;
-  maxLength?: number | null;
-  minLenght?: number | null;
+  maxLength?: LengthType;
+  minLenght?: LengthType;
+  readOnly?: boolean;
 }
 
-type InputType =
+export type InputType =
   | "button"
   | "checkbox"
   | "color"
@@ -31,3 +32,5 @@ type InputType =
   | "time"
   | "url"
   | "week";
+
+type LengthType = number | null;

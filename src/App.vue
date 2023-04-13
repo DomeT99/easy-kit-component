@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import Input from "./components/input/Input.vue";
-
-let text = ref("");
-
+import EInput from "./components/input/Input.vue";
+import EButton from "./components/button/Button.vue";
 </script>
 <template>
-  <Input v-model="text" />
+  <EInput />
+  <EButton>Ciao</EButton>
 </template>

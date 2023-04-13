@@ -17,7 +17,7 @@ function updateModelValue(event: Event) {
   <input
     @input="updateModelValue($event)"
     :type="props.type ?? 'text'"
-    :class="props.customClasses ?? ''"
+    :class="props.customClasses ?? 'e-input'"
     :placeholder="props.placeHolder ?? ''"
   />
 </template>

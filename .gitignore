@@ -26,3 +26,4 @@ dist-ssr
 *.snap
 src/Test.vue
 src/test.ts
+test.html

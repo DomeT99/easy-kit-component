@@ -4,6 +4,8 @@ export interface Input {
   type?: InputType;
   placeHolder?: string;
   customClasses?: CustomClasses;
+  maxLength?: number | null;
+  minLenght?: number | null;
 }
 
 type InputType =
@@ -29,4 +31,3 @@ type InputType =
   | "time"
   | "url"
   | "week";
-

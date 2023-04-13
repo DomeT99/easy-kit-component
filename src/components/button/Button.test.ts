@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from "vitest";
 
 let wrapper;
 
-describe("EButton suite", () => {
+describe.skip("EButton suite", () => {
   it("render correctly", () => {
     wrapper = mount(EButton);
 

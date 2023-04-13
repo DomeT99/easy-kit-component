@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 *.snap
+src/Test.vue
+src/test.ts

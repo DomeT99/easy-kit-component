@@ -1,6 +1,6 @@
 import { computed } from "vue";
 
-export function useLengthComputed(minLength?: number, maxLength?: number) {
+export default function useLengthComputed(minLength?: number, maxLength?: number) {
   const minLengthComputed = computed(() => {
     return minLength ?? undefined;
   });

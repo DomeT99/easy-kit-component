@@ -10,4 +10,16 @@ describe("EInput suite", () => {
 
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  it("render default class", () => {
+    const options = {
+      props: {
+        customClasses: undefined,
+      },
+    };
+
+    wrapper = mount(EInput, options);
+
+    expect(wrapper.classes()).toEqual(["e-input"]);
+  });
 });

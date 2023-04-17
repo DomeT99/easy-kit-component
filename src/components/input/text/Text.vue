@@ -3,11 +3,12 @@ import useLengthComputed from "../../../composables/useLengthComputed";
 import useUpdateModelValue from "../../../composables/useUpdateModelValue";
 import useReadOnlyComputed from "../../../composables/useReadOnlyComputed";
 import usePlaceHolderComputed from "../../../composables/usePlaceHolderComputed";
+import useDisabledComputed from "../../../composables/useDisabledComputed";
 import { Text } from "../../../types/components/Input";
 
-interface InputProps extends Text {}
+interface TextProps extends Text {}
 
-const props = defineProps<InputProps>();
+const props = defineProps<TextProps>();
 const emit = defineEmits();
 
 const { minLengthComputed, maxLengthComputed } = useLengthComputed(
@@ -16,6 +17,7 @@ const { minLengthComputed, maxLengthComputed } = useLengthComputed(
 );
 const { readOnlyComputed } = useReadOnlyComputed(props.readOnly);
 const { placeHolderComputed } = usePlaceHolderComputed(props.placeHolder);
+const { disabledComputed } = useDisabledComputed(props.disabled);
 </script>
 
 <template>
@@ -23,10 +25,11 @@ const { placeHolderComputed } = usePlaceHolderComputed(props.placeHolder);
     type="text"
     class="e-input-text"
     @input="useUpdateModelValue($event, emit)"
-    :readonly="readOnlyComputed"
     :minlength="minLengthComputed"
     :maxlength="maxLengthComputed"
+    :readonly="readOnlyComputed"
     :placeholder="placeHolderComputed"
+    :disabled="disabledComputed"
   />
 </template>
 

@@ -3,6 +3,7 @@ export interface Text {
   maxLength?: LengthType;
   minLenght?: LengthType;
   readOnly?: boolean;
+  disabled?: boolean;
 }
 
 type LengthType = number | null;

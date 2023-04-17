@@ -8,8 +8,15 @@ interface ButtonProps extends Button {}
 const props = defineProps<ButtonProps>();
 
 const { disabledComputed } = useDisabledComputed(props.disabled);
+
 const typeComputed = computed(() => {
   return props.type ?? "button";
+});
+const autoFocusComputed = computed(() => {
+  return props.autoFocus ?? false;
+});
+const formIdComputed = computed(() => {
+  return props.formId ?? undefined;
 });
 </script>
 
@@ -18,8 +25,8 @@ const typeComputed = computed(() => {
     class="e-button"
     :type="typeComputed"
     :disabled="disabledComputed"
-    :autofocus="props.autoFocus ?? false"
-    :form="props.formId ?? undefined"
+    :autofocus="autoFocusComputed"
+    :form="formIdComputed"
   >
     <slot></slot>
   </button>

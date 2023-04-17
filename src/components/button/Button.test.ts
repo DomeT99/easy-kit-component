@@ -23,6 +23,18 @@ describe("EButton suite", () => {
     expect(wrapper.attributes("type")).toBe("button");
   });
 
+  it("render default autofocus", () => {
+    wrapper = mount(EButton);
+
+    expect(wrapper.attributes("autofocus")).toBe('false');
+  });
+
+  it("render default form id", () => {
+    wrapper = mount(EButton);
+
+    expect(wrapper.attributes("form")).toBe(undefined);
+  });
+
   it("trigger click event", () => {
     const click = vi.fn();
     const options = {

@@ -12,15 +12,15 @@ describe("EButton suite", () => {
   });
 
   it("render default class", () => {
-    const options = {
-      props: {
-        customClasses: undefined,
-      },
-    };
-
-    wrapper = mount(EButton, options);
+    wrapper = mount(EButton);
 
     expect(wrapper.classes()).toEqual(["e-button"]);
+  });
+
+  it("render default type", () => {
+    wrapper = mount(EButton);
+
+    expect(wrapper.attributes("type")).toBe("button");
   });
 
   it("trigger click event", () => {

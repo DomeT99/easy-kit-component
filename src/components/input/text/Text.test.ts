@@ -1,4 +1,4 @@
-import EInput from "./Input.vue";
+import EInput from "./Text.vue";
 import { mount } from "@vue/test-utils";
 import { describe, it,expect } from "vitest";
 
@@ -20,6 +20,6 @@ describe("EInput suite", () => {
 
     wrapper = mount(EInput, options);
 
-    expect(wrapper.classes()).toEqual(["e-input"]);
+    expect(wrapper.classes()).toEqual(["e-input-text"]);
   });
 });

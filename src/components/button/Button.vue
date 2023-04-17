@@ -8,8 +8,8 @@ const props = defineProps<ButtonProps>();
 
 <template>
   <button
+    class="e-button"
     :type="props.type ?? 'button'"
-    :class="props.customClasses ?? 'e-button'"
     :disabled="props.disabled ?? false"
     :autofocus="props.autoFocus ?? false"
     :form="props.formId ?? undefined"

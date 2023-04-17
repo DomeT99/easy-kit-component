@@ -1,3 +1,3 @@
 # Easy-Kit
 
-Under work
+Under work && coming soon...

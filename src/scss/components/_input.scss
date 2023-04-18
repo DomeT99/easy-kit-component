@@ -1,5 +1,12 @@
-.e-input-text{
-    padding: 8px;
-    border: 1px solid #000;
-    border-radius: 5px;
+@import "../colors/colors";
+
+.e-input-text {
+  padding: 8px;
+  border: 1px solid $black;
+  border-radius: 5px;
+
+  &:disabled {
+    opacity: 0.5;
+    background-color: $gray;
+  }
 }

@@ -11,6 +11,7 @@ interface TextProps extends Text {}
 const props = defineProps<TextProps>();
 const emit = defineEmits();
 
+
 const { minLengthComputed, maxLengthComputed } = useLengthComputed(
   props.minLenght!,
   props.maxLength!

@@ -23,11 +23,22 @@ describe("EInput suite", () => {
     expect(wrapper.attributes("minlength")).toBe(undefined);
     expect(wrapper.attributes("maxlength")).toBe(undefined);
   });
-  
+
+  it("render default readonly", () => {
+    wrapper = mount(EInput);
+
+    expect(wrapper.attributes("readonly")).toBe(undefined);
+  });
+
   it("render default placeholder", () => {
     wrapper = mount(EInput);
 
     expect(wrapper.attributes("placeholder")).toBe(undefined);
   });
 
+  it("render default disabled", () => {
+    wrapper = mount(EInput);
+
+    expect(wrapper.attributes("disabled")).toBe(undefined);
+  });
 });

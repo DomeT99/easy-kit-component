@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useLengthComputed from "../../../composables/useLengthComputed";
-import useUpdateModelValue from "../../../composables/useUpdateModelValue";
+import { useUpdateModelText } from "../../../composables/useUpdateModelValue";
 import useReadOnlyComputed from "../../../composables/useReadOnlyComputed";
 import usePlaceHolderComputed from "../../../composables/usePlaceHolderComputed";
 import useDisabledComputed from "../../../composables/useDisabledComputed";
@@ -10,7 +10,6 @@ interface TextProps extends Text {}
 
 const props = defineProps<TextProps>();
 const emit = defineEmits();
-
 
 const { minLengthComputed, maxLengthComputed } = useLengthComputed(
   props.minLenght!,
@@ -25,7 +24,7 @@ const { disabledComputed } = useDisabledComputed(props.disabled);
   <input
     type="text"
     class="e-input-text"
-    @input="useUpdateModelValue($event, emit)"
+    @input="useUpdateModelText($event, emit)"
     :minlength="minLengthComputed"
     :maxlength="maxLengthComputed"
     :readonly="readOnlyComputed"

@@ -1,9 +1,15 @@
-export interface Text {
+interface Input {
+  disabled?: boolean;
+}
+
+export interface Text extends Input {
   placeHolder?: string;
   maxLength?: LengthType;
   minLenght?: LengthType;
   readOnly?: boolean;
-  disabled?: boolean;
 }
+
+export interface Checkbox extends Input {}
+
 
 type LengthType = number | null;

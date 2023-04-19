@@ -13,9 +13,10 @@ const { disabledComputed } = useDisabledComputed(props.disabled);
 
 <template>
   <input
+    class="e-input-checkbox"
+    type="checkbox"
     @change="useUpdateModelCheckbox($event, emit)"
     :disabled="disabledComputed"
-    type="checkbox"
   />
 </template>
 

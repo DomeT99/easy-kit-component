@@ -23,7 +23,7 @@ describe("ECheckbox suite", () => {
     expect(wrapper.attributes("disabled")).toBe(undefined);
   });
 
-  it.only("trigger click event", () => {
+  it("trigger click event", () => {
     const change = vi.fn(() => true);
     const options = {
       listeners: {

@@ -1,35 +1,29 @@
 <script setup lang="ts">
-import useLengthComputed from "../../../composables/useLengthComputed";
 import { useUpdateModelText } from "../../../composables/useUpdateModelValue";
-import useReadOnlyComputed from "../../../composables/useReadOnlyComputed";
-import usePlaceHolderComputed from "../../../composables/usePlaceHolderComputed";
-import useDisabledComputed from "../../../composables/useDisabledComputed";
-import { Text } from "../../../types/components/Input";
 
-interface TextProps extends Text {}
+type LengthType = number | null;
 
-const props = defineProps<TextProps>();
+interface Text {
+  placeHolder?: string;
+  maxLength?: LengthType;
+  minLenght?: LengthType;
+  readOnly?: boolean;
+  disabled?: boolean;
+}
+
+const props = defineProps<Text>();
 const emit = defineEmits();
-
-const { minLengthComputed, maxLengthComputed } = useLengthComputed(
-  props.minLenght!,
-  props.maxLength!
-);
-const { readOnlyComputed } = useReadOnlyComputed(props.readOnly);
-const { placeHolderComputed } = usePlaceHolderComputed(props.placeHolder);
-const { disabledComputed } = useDisabledComputed(props.disabled);
 </script>
 
 <template>
   <input
     type="text"
-    class="e-input-text"
     @input="useUpdateModelText($event, emit)"
-    :minlength="minLengthComputed"
-    :maxlength="maxLengthComputed"
-    :readonly="readOnlyComputed"
-    :placeholder="placeHolderComputed"
-    :disabled="disabledComputed"
+    :minlength="props.minLenght!"
+    :maxlength="props.maxLength!"
+    :readonly="props.readOnly"
+    :placeholder="props.placeHolder"
+    :disabled="props.disabled"
   />
 </template>
 

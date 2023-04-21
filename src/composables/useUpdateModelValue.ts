@@ -9,3 +9,7 @@ export function useUpdateModelCheckbox(event: Event, emit: any) {
 
   emit("update:modelValue", value);
 }
+
+export function useUpdateModelRadiobox(value: any, emit: any) {
+  emit("update:modelValue", value);
+}

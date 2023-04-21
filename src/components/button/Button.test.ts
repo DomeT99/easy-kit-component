@@ -2,17 +2,11 @@ import { mount, shallowMount } from "@vue/test-utils";
 import { describe, expect, it, vi } from "vitest";
 import EButton from "./Button.vue";
 
-
-
 describe("EButton suite", () => {
   let wrapper = shallowMount(EButton);
 
   it("render correctly", () => {
     expect(wrapper.html()).toMatchSnapshot();
-  });
-
-  it("render default class", () => {
-    expect(wrapper.classes()).toEqual(["e-button"]);
   });
 
   it("render default type", () => {
@@ -24,7 +18,7 @@ describe("EButton suite", () => {
   });
 
   it("render default form id", () => {
-    expect(wrapper.attributes("form")).toBe(undefined);
+    expect(wrapper.attributes("form")).toBeUndefined();
   });
 
   it("trigger click event", () => {

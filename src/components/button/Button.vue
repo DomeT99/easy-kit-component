@@ -1,32 +1,22 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { Button } from "../../types/components/Button";
-import useDisabledComputed from "../../composables/useDisabledComputed";
+type ButtonType = "button" | "submit" | "reset";
 
-interface ButtonProps extends Button {}
+interface Button {
+  type?: ButtonType;
+  disabled?: boolean;
+  formId?: string;
+  autoFocus?: boolean;
+}
 
-const props = defineProps<ButtonProps>();
-
-const { disabledComputed } = useDisabledComputed(props.disabled);
-
-const typeComputed = computed(() => {
-  return props.type ?? "button";
-});
-const autoFocusComputed = computed(() => {
-  return props.autoFocus ?? false;
-});
-const formIdComputed = computed(() => {
-  return props.formId ?? undefined;
-});
+const props = defineProps<Button>();
 </script>
 
 <template>
   <button
-    class="e-button"
-    :type="typeComputed"
-    :disabled="disabledComputed"
-    :autofocus="autoFocusComputed"
-    :form="formIdComputed"
+    :type="props.type ?? 'button'"
+    :disabled="props.disabled"
+    :autofocus="props.autoFocus"
+    :form="props.formId"
   >
     <slot></slot>
   </button>

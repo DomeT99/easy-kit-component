@@ -1,33 +1,28 @@
-import { mount } from "@vue/test-utils";
+import { mount, shallowMount } from "@vue/test-utils";
+import { describe, expect, it } from "vitest";
 import ESelect from "./Select.vue";
-import { describe, expect, it, vi } from "vitest";
-
-let wrapper;
 
 describe("ESelect suite", () => {
+  let wrapper = shallowMount(ESelect);
+
   it("render correctly", () => {
-    wrapper = mount(ESelect);
     expect(wrapper.html()).toMatchSnapshot();
   });
 
   it("render default class", () => {
-    wrapper = mount(ESelect);
     expect(wrapper.classes()).toEqual(["e-select"]);
   });
 
   it("render default multiple", () => {
-    wrapper = mount(ESelect);
-    expect(wrapper.attributes("multiple")).toBe(undefined);
+    expect(wrapper.attributes("multiple")).toBeUndefined();
   });
 
   it("render default required", () => {
-    wrapper = mount(ESelect);
-    expect(wrapper.attributes("required")).toBe(undefined);
+    expect(wrapper.attributes("required")).toBeUndefined();
   });
 
   it("render default disabled", () => {
-    wrapper = mount(ESelect);
-    expect(wrapper.attributes("disabled")).toBe(undefined);
+    expect(wrapper.attributes("disabled")).toBeUndefined();
   });
 
   it("render correctly placeholder", () => {

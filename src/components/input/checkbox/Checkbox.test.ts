@@ -1,25 +1,19 @@
-import ECheckbox from "./Checkbox.vue";
-import { mount } from "@vue/test-utils";
+import { mount, shallowMount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
-
-let wrapper;
+import ECheckbox from "./Checkbox.vue";
 
 describe("ECheckbox suite", () => {
-  it("render correctly", () => {
-    wrapper = mount(ECheckbox);
+  let wrapper = shallowMount(ECheckbox);
 
+  it("render correctly", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
   it("render default class", () => {
-    wrapper = mount(ECheckbox);
-
     expect(wrapper.classes()).toEqual(["e-input-checkbox"]);
   });
 
   it("render default disabled", () => {
-    wrapper = mount(ECheckbox);
-
     expect(wrapper.attributes("disabled")).toBe(undefined);
   });
 

@@ -1,44 +1,32 @@
-import EInput from "./Text.vue";
-import { mount } from "@vue/test-utils";
+import { shallowMount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
-
-let wrapper;
+import EInput from "./Text.vue";
 
 describe("EInput suite", () => {
-  it("render correctly", () => {
-    wrapper = mount(EInput);
+  let wrapper = shallowMount(EInput);
 
+  it("render correctly", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
   it("render default class", () => {
-    wrapper = mount(EInput);
-
     expect(wrapper.classes()).toEqual(["e-input-text"]);
   });
 
   it("render default length", () => {
-    wrapper = mount(EInput);
-
     expect(wrapper.attributes("minlength")).toBe(undefined);
     expect(wrapper.attributes("maxlength")).toBe(undefined);
   });
 
   it("render default readonly", () => {
-    wrapper = mount(EInput);
-
     expect(wrapper.attributes("readonly")).toBe(undefined);
   });
 
   it("render default placeholder", () => {
-    wrapper = mount(EInput);
-
     expect(wrapper.attributes("placeholder")).toBe(undefined);
   });
 
   it("render default disabled", () => {
-    wrapper = mount(EInput);
-
     expect(wrapper.attributes("disabled")).toBe(undefined);
   });
 });

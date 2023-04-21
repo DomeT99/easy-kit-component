@@ -1,37 +1,29 @@
-import { mount } from "@vue/test-utils";
-import EButton from "./Button.vue";
+import { mount, shallowMount } from "@vue/test-utils";
 import { describe, expect, it, vi } from "vitest";
+import EButton from "./Button.vue";
 
-let wrapper;
+
 
 describe("EButton suite", () => {
-  it("render correctly", () => {
-    wrapper = mount(EButton);
+  let wrapper = shallowMount(EButton);
 
+  it("render correctly", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
   it("render default class", () => {
-    wrapper = mount(EButton);
-
     expect(wrapper.classes()).toEqual(["e-button"]);
   });
 
   it("render default type", () => {
-    wrapper = mount(EButton);
-
     expect(wrapper.attributes("type")).toBe("button");
   });
 
   it("render default autofocus", () => {
-    wrapper = mount(EButton);
-
-    expect(wrapper.attributes("autofocus")).toBe('false');
+    expect(wrapper.attributes("autofocus")).toBe("false");
   });
 
   it("render default form id", () => {
-    wrapper = mount(EButton);
-
     expect(wrapper.attributes("form")).toBe(undefined);
   });
 

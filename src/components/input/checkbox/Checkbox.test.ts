@@ -9,12 +9,8 @@ describe("ECheckbox suite", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  it("render default class", () => {
-    expect(wrapper.classes()).toEqual(["e-input-checkbox"]);
-  });
-
   it("render default disabled", () => {
-    expect(wrapper.attributes("disabled")).toBe(undefined);
+    expect(wrapper.attributes("disabled")).toBeUndefined();
   });
 
   it("trigger click event", () => {

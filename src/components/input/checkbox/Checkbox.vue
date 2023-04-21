@@ -1,22 +1,19 @@
 <script setup lang="ts">
-import useDisabledComputed from "../../../composables/useDisabledComputed";
 import { useUpdateModelCheckbox } from "../../../composables/useUpdateModelValue";
-import { Checkbox } from "../../../types/components/Input";
 
-interface CheckboxProps extends Checkbox {}
+interface Checkbox{
+  disabled?:boolean;
+}
 
-const props = defineProps<CheckboxProps>();
+const props = defineProps<Checkbox>();
 const emit = defineEmits();
-
-const { disabledComputed } = useDisabledComputed(props.disabled);
 </script>
 
 <template>
   <input
-    class="e-input-checkbox"
     type="checkbox"
     @change="useUpdateModelCheckbox($event, emit)"
-    :disabled="disabledComputed"
+    :disabled="props.disabled"
   />
 </template>
 

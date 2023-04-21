@@ -9,10 +9,6 @@ describe("ESelect suite", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  it("render default class", () => {
-    expect(wrapper.classes()).toEqual(["e-select"]);
-  });
-
   it("render default multiple", () => {
     expect(wrapper.attributes("multiple")).toBeUndefined();
   });

@@ -20,7 +20,6 @@ watch(selectedValue, (newValue) => {
 
 <template>
   <select
-    class="e-select"
     :multiple="props.multiple"
     :required="props.required"
     :disabled="props.disabled"

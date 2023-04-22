@@ -2,7 +2,6 @@
 import { useUpdateModelRadiobox } from "../../composables/useUpdateModelValue";
 
 interface Radio {
-  id?: string;
   value?: any;
   name?: string;
   disabled?: boolean;
@@ -17,11 +16,10 @@ let selectedValue = props.value;
 <template>
   <label :for="props.name">
     <input
-      @change="useUpdateModelRadiobox(selectedValue, emit)"
       type="radio"
+      @change="useUpdateModelRadiobox(selectedValue, emit)"
       :disabled="props.disabled"
       :name="props.name"
-      :id="props.id"
     />
     <slot></slot>
   </label>

@@ -25,7 +25,9 @@ describe("ERadio suite", () => {
   });
 
   it.only("trigger click event", () => {
-    const change = vi.fn(() => true);
+    const change = vi.fn(() => {
+      return true;
+    });
     const options = {
       listeners: {
         change: change(),

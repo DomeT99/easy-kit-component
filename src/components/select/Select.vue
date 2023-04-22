@@ -20,10 +20,10 @@ watch(selectedValue, (newValue) => {
 
 <template>
   <select
+    v-model="selectedValue"
     :multiple="props.multiple"
     :required="props.required"
     :disabled="props.disabled"
-    v-model="selectedValue"
   >
     <option disabled :value="null">
       {{ props.placeHolder ?? "" }}

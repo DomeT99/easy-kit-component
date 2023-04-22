@@ -14,7 +14,10 @@ describe("ECheckbox suite", () => {
   });
 
   it("trigger click event", () => {
-    const change = vi.fn(() => true);
+    const change = vi.fn(() => {
+      return true;
+    });
+
     const options = {
       listeners: {
         change: change(),

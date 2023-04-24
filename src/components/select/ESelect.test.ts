@@ -1,6 +1,6 @@
 import { mount, shallowMount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import ESelect from "./Select.vue";
+import ESelect from "./ESelect.vue";
 
 describe("ESelect suite", () => {
   let wrapper = shallowMount(ESelect);

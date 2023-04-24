@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
-import EInput from "./Text.vue";
+import EInput from "./EText.vue";
 
 describe("EInput suite", () => {
   let wrapper = shallowMount(EInput);

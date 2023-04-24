@@ -1,6 +1,6 @@
 import { mount, shallowMount } from "@vue/test-utils";
 import { describe, expect, it, vi } from "vitest";
-import EButton from "./Button.vue";
+import EButton from "./EButton.vue";
 
 describe("EButton suite", () => {
   let wrapper = shallowMount(EButton);

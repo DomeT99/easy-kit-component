@@ -1,6 +1,6 @@
 import { mount, shallowMount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
-import ECheckbox from "./Checkbox.vue";
+import ECheckbox from "./ECheckbox.vue";
 
 describe("ECheckbox suite", () => {
   let wrapper = shallowMount(ECheckbox);

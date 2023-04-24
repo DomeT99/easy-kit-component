@@ -1,6 +1,6 @@
 import { mount, shallowMount } from "@vue/test-utils";
 import { describe, it, expect, vi } from "vitest";
-import ERadio from "./Radio.vue";
+import ERadio from "./ERadio.vue";
 
 describe("ERadio suite", () => {
   let wrapper = shallowMount(ERadio);
@@ -24,7 +24,7 @@ describe("ERadio suite", () => {
     expect(wrapper.props("name")).toEqual("test");
   });
 
-  it.only("trigger click event", () => {
+  it("trigger click event", () => {
     const change = vi.fn(() => {
       return true;
     });

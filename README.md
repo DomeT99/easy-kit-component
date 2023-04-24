@@ -1,3 +1,22 @@
-# Easy-Kit
+# Easy Kit Vue 🛠
+[![NPM Package](https://badgen.net/npm/v/easy-kit-vue)](https://npmjs.com/package/easy-kit-vue)
 
-Under work && coming soon...
+Simple components kit for Vue 3!
+
+
+## Installation
+
+
+```bash
+  # or pnpm or yarn
+  npm install easy-kit-vue
+```
+    
+## Authors
+
+- [Domenico Tenace alias _"Dvalin"_](https://linktr.ee/domenicotenace)
+
+
+## License
+
+[MIT](https://github.com/DomeT99/easy-kit-vue/blob/master/LICENSE)

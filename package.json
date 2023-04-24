@@ -1,7 +1,21 @@
 {
   "name": "easy-kit",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Simple component kit for Vue 3",
+  "version": "0.1.0",
+  "author": "Domenico 'Dvalin' Tenace <domenicotenace99@gmail.com> (https://linktr.ee/domenicotenace)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DomeT99/easy-kit.git",
+    "directory": "https://github.com/DomeT99/easy-kit/blob/master/package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "library",
+    "vue",
+    "javascript",
+    "typescript",
+    "component"
+  ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",

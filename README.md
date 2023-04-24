@@ -9,7 +9,7 @@ Simple components kit for Vue 3!
 
 ```bash
   # or pnpm or yarn
-  npm install easy-kit-vue
+  npm i easy-kit-component
 ```
     
 ## Authors

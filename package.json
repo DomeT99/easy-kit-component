@@ -2,16 +2,22 @@
   "name": "easy-kit",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "test": "vitest --dom"
   },
   "dependencies": {
     "happy-dom": "^9.8.1",
-    "sass": "^1.62.0",
+    "vite-plugin-dts": "^2.3.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {

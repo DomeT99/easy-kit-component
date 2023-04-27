@@ -3,15 +3,20 @@ layout: home
 
 hero:
   name: "Easy Component Kit "
-  text: "Simple components kit for Vue 3!"
+  text: "Simple components kit for Vue 3! 🛠"
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: ../getting-started/quick-start.md
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/DomeT99/easy-kit-component
 
 features:
-  - title: Easy integration
+  - icon: 💪
+    title: Easy integration
     details: Ease of integration with new projects or existing projects.
-  - title: No CSS
+  - icon: ❌
+    title: No CSS
     details: No dependencies, you can customize it as you see fit!
 ---

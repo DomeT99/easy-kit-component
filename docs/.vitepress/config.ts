@@ -1,28 +1,36 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
+
 export default defineConfig({
   title: "Easy Component Kit ",
   description: "Simple components kit for Vue 3!",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Docs', link: '../getting-started/quick-start.md' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Getting Started',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Quick Start', link: '../getting-started/quick-start.md' },
+        ]
+      },
+      {
+        text: 'Components',
+        items: [
+          { text: 'EButton', link: '../components/ebutton.md' },
+          { text: 'ECheckbox', link: '../components/echeckbox.md' },
+          { text: 'EText', link: '../components/etext.md' },
+          { text: 'ERadio', link: '../components/eradio.md' },
+          { text: 'ESelect', link: '../components/eselect.md' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/DomeT99/easy-kit-component' }
     ]
   }
 })

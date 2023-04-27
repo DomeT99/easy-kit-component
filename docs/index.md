@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Easy Component Kit "
+  name: "Easy Kit Component"
   text: "Simple components kit for Vue 3! 🛠"
   actions:
     - theme: brand

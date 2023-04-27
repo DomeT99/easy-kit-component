@@ -1,85 +1,44 @@
-# Markdown Extension Examples
+---
+next:
+  text: "EButton"
+  link: "/guide/components/ebutton.md"
+---
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
-## Syntax Highlighting
+# Quick Start
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
-
-**Input**
-
-````
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
+## Installation
 
 ::: warning
-This is a warning.
+This component library has been designed and developed to work in **Vue v3.x** projects.
+<br/>
+**Vue v2.x is not supported**.
 :::
 
-::: danger
-This is a dangerous warning.
-:::
+To get started with Easy-Kit-Component, simply paste the following code into your terminal:
 
-::: details
-This is a details block.
-:::
+::: code-group
+
+```sh [npm]
+$ npm install easy-kit-component
 ```
 
-**Output**
+```sh [yarn]
+$ yarn add easy-kit-component
+```
 
-::: info
-This is an info box.
 :::
 
-::: tip
-This is a tip.
-:::
+## Usage
 
-::: warning
-This is a warning.
-:::
+```js
+<script setup>
+import { EButton } from "easy-kit-component";
+</script>
 
-::: danger
-This is a dangerous warning.
-:::
+<template>
+  <EButton>Hello!</EButton>
+</template>
+```
 
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+The syntax of each component also supports camel-case (`<e-button>Hello!</e-button>`).

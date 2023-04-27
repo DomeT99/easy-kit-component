@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Easy Component Kit ",
+  title: "Easy Kit Component",
   description: "Simple components kit for Vue 3!",
   themeConfig: {
     nav: [

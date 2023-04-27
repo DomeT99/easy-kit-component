@@ -31,6 +31,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DomeT99/easy-kit-component' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present Domenico Tenace'
+    }
   }
 })

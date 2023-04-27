@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: ../getting-started/quick-start.md
+      link: ../guide/getting-started/quick-start.md
     - theme: alt
       text: View on GitHub
       link: https://github.com/DomeT99/easy-kit-component

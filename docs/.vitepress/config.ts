@@ -8,8 +8,8 @@ export default defineConfig({
       { text: "Home", link: "/" },
       {
         text: "Docs",
-        link: "../getting-started/quick-start.md",
-        activeMatch: "/getting-started/",
+        link: "../guide/getting-started/quick-start.md",
+        activeMatch: `/guide/`,
       },
     ],
 

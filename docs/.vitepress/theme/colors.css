@@ -1,12 +1,13 @@
 :root {
   --primary-color: #ffa500;
-  --primary-color-dark: #da6900;
+  --primary-color-dark: #ff8b1e;
   --secondary-color: #ffc862;
   --black: #000;
 }
 
 :root {
-  --vp-c-brand: var(--primary-color);
+
+  --vp-c-brand: var(--primary-color-dark);
   --vp-c-brand-light: var(--secondary-color);
 
   --vp-button-brand-border: var(--primary-color);

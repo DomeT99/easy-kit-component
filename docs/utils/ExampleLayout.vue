@@ -1,15 +1,19 @@
 <script setup lang="ts"></script>
 <template>
-  <pre class="pre">
+  <pre class="demo">
     <slot />
   </pre>
 </template>
 
 <style scoped>
-.pre {
-  padding: 1rem;
+.dark .demo {
+  background-color: #161618;
+}
+
+.demo {
+  padding: 20px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
-  border-radius: 8px;
 }
 </style>

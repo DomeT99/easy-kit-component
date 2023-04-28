@@ -3,6 +3,18 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Easy Kit Component",
   description: "Simple components kit for Vue 3!",
+  titleTemplate: false,
+  head: [
+    [
+      "link",
+      {
+        rel: "favicon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/docs/public/favicon.ico",
+      },
+    ],
+  ],
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -29,7 +41,6 @@ export default defineConfig({
           { text: "ERadio", link: "../components/eradio.md" },
           { text: "ESelect", link: "../components/eselect.md" },
         ],
-        collapsed: true,
       },
     ],
 

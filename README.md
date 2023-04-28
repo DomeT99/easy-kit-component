@@ -1,5 +1,5 @@
-# Easy Kit Vue 🛠
-[![NPM Package](https://badgen.net/npm/v/easy-kit-vue)](https://npmjs.com/package/easy-kit-vue)
+# Easy Kit Component 🛠
+[![NPM Package](https://badgen.net/npm/v/easy-kit-component)](https://npmjs.com/package/easy-kit-component)
 
 Simple components kit for Vue 3!
 

@@ -1,0 +1,8 @@
+#button{
+  all: revert;
+  color-scheme: initial;
+  cursor: pointer;
+}
+#button:disabled{
+  cursor: auto;
+}

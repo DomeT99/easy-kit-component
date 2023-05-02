@@ -4,7 +4,7 @@ export default defineConfig({
   title: "Easy Kit Component",
   description: "Simple components kit for Vue 3!",
   titleTemplate: false,
-  base: "/easy-kit-component/",
+  base: "/",
   head: [
     [
       "link",

@@ -17,7 +17,7 @@ const choice = ref();
 
 # ERadio
 
-The `ERadio` component replaces the standard html radio and encapsulates well-defined logic that can be reused throughout the app.
+The `ERadio` component replaces the standard html input type radio and encapsulates well-defined logic that can be reused throughout the app.
 
 ## Basic Usage
 

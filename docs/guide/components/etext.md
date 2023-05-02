@@ -40,19 +40,6 @@ const check = ref();
   <h6 style="padding-left:1rem">{{ text }}</h6>
 </ExampleLayout>
 
-### Disabled
-
-`disabled` prop is a boolean value that determines whether the checkbox is rendered disabled or not.
-<br/>
-By default it is `false`.
-
-```vue-html
-  <ECheckbox :disabled="true"/>
-```
-
-<ExampleLayout>
-   <ECheckbox :disabled="true"/>
-</ExampleLayout>
 
 ## API Reference
 

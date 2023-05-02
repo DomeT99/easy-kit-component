@@ -35,10 +35,9 @@ const check = ref();
 ```
 
 <ExampleLayout>
-   <p style="padding-right:1rem;">{{ check }}</p>
-  <ECheckbox id="checkbox" v-model="check"/>
+  <ECheckbox id="checkbox" v-model="check"/><br/>
+   <h6>Check : {{ check }}</h6>
 </ExampleLayout>
-
 
 ## API Reference
 
@@ -46,6 +45,6 @@ const check = ref();
 
 ```ts
 interface Checkbox {
-  disabled?:boolean;
+  disabled?: boolean;
 }
 ```

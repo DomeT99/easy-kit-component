@@ -1,6 +1,7 @@
 #button, #checkbox, #text, #radio{
   all: revert;
   color-scheme: initial;
+  width: min-content;
 }
 #button:disabled, #checkbox:disabled,#text:disabled,#radio:disabled{
   cursor: auto;

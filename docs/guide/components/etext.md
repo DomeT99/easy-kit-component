@@ -37,7 +37,7 @@ const text = ref();
 <ExampleLayout>
   <EText id="text" v-model="text"/>
   <br/>
-  <h6 style="padding-left:1rem">{{ text }}</h6>
+  <h6>Message is : {{ text }}</h6>
 </ExampleLayout>
 
 

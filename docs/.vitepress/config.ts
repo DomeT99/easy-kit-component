@@ -16,6 +16,9 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     nav: [
       { text: "Home", link: "/" },
       {

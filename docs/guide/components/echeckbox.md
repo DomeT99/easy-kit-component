@@ -39,20 +39,6 @@ const check = ref();
   <ECheckbox id="checkbox" v-model="check"/>
 </ExampleLayout>
 
-### Disabled
-
-`disabled` prop is a boolean value that determines whether the checkbox is rendered disabled or not.
-<br/>
-By default it is `false`.
-
-```vue-html
-  <ECheckbox :disabled="true"/>
-```
-
-<ExampleLayout>
-   <ECheckbox :disabled="true"/>
-</ExampleLayout>
-
 
 ## API Reference
 

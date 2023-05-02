@@ -36,19 +36,6 @@ import { EButton } from "easy-kit-component";
   <EButton id="button">Click Here</EButton>
 </ExampleLayout>
 
-### Disabled
-
-`disabled` prop is a boolean value that determines whether the button is rendered disabled or not.
-<br/>
-By default it is `false`.
-
-```vue-html
- <EButton :disabled="true">Disabled Button</EButton>
-```
-
-<ExampleLayout>
-  <EButton :disabled="true" id="button">Disabled Button</EButton>
-</ExampleLayout>
 
 ### Trigger Event
 

@@ -30,8 +30,8 @@ const choice = ref();
 </script>
 
 <template>
-  <ERadio id="radio" :value="'One'" v-model="choice" :name="'Number'">One</ERadio>
-  <ERadio id="radio" :value="'Two'" v-model="choice" :name="'Number'">Two</ERadio>
+  <ERadio :value="'One'" v-model="choice" :name="'Number'">One</ERadio>
+  <ERadio :value="'Two'" v-model="choice" :name="'Number'">Two</ERadio>
 </template>
 ```
 

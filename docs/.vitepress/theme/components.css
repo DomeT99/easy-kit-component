@@ -1,8 +1,8 @@
-#button, #checkbox, #text{
+#button, #checkbox, #text, #radio{
   all: revert;
   color-scheme: initial;
 }
-#button:disabled, #checkbox:disabled,#text:disabled{
+#button:disabled, #checkbox:disabled,#text:disabled,#radio:disabled{
   cursor: auto;
 }
 

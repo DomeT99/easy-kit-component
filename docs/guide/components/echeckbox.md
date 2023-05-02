@@ -17,7 +17,7 @@ const check = ref(false);
 
 # ECheckbox
 
-The `ECheckbox` component replaces the standard html button and encapsulates well-defined logic that can be reused throughout the app.
+The `ECheckbox` component replaces the standard html input type checkbox and encapsulates well-defined logic that can be reused throughout the app.
 
 ## Basic Usage
 

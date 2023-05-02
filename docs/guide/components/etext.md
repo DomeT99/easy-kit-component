@@ -17,16 +17,16 @@ const text = ref();
 
 # EText
 
-The `EText` component replaces the standard html button and encapsulates well-defined logic that can be reused throughout the app.
+The `EText` component replaces the standard html input type text and encapsulates well-defined logic that can be reused throughout the app.
 
 ## Basic Usage
 
 ```vue-html
 <script setup>
 import { ref } from "vue";
-import { ECheckbox } from "easy-kit-component";
+import { EText } from "easy-kit-component";
 
-const check = ref();
+const text = ref();
 </script>
 
 <template>

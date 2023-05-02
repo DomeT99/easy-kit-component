@@ -13,7 +13,7 @@
 .demo {
   padding: 20px;
   border-radius: 8px;
-  display:flex;
-  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
 }
 </style>

@@ -7,10 +7,10 @@
 
 :root {
 
-  --vp-c-brand: var(--primary-color-dark);
-  --vp-c-brand-light: var(--secondary-color);
-
+  --vp-c-brand-1: var(--primary-color-dark);
+  
   --vp-button-brand-border: var(--primary-color);
+  --vp-button-brand-bg: var(--primary-color-dark);
 
   --vp-button-brand-active-border: var(--primary-color);
   --vp-button-brand-active-bg: var(--secondary-color);

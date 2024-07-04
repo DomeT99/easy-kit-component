@@ -1,41 +1,41 @@
 ---
 prev:
-  text: "ECheckbox"
-  link: "/guide/components/echeckbox.md"
+  text: "EText"
+  link: "/guide/components/etext.md"
 next:
   text: "ERadio"
   link: "/guide/components/eradio.md"
 ---
 
 <script setup lang="ts">
-import { EText } from "../../../src/index.ts";
+import { ETextArea } from "../../../src/index.ts";
 import ExampleLayout from "../../utils/ExampleLayout.vue";
 import { ref } from "vue";
 
 const text = ref();
 </script>
 
-# EText
+# ETextArea
 
-The `EText` component replaces the standard html input type text and encapsulates well-defined logic that can be reused throughout the app.
+The `ETextArea` component replaces the standard html textarea and encapsulates well-defined logic that can be reused throughout the app.
 
 ## Basic Usage
 
 ```vue-html
 <script setup>
 import { ref } from "vue";
-import { EText } from "easy-kit-component";
+import { ETextArea } from "easy-kit-component";
 
 const text = ref();
 </script>
 
 <template>
-  <EText v-model="text"/>
+  <ETextArea v-model="text"/>
 </template>
 ```
 
 <ExampleLayout>
-  <EText id="text" v-model="text"/>
+  <ETextArea id="text" v-model="text"/>
   <br/>
   <h6>Message is : {{ text }}</h6>
 </ExampleLayout>
@@ -46,11 +46,13 @@ const text = ref();
 - **Props**
 
 ```ts
-interface Text {
+interface TextArea {
   placeHolder?: string;
   maxLength?: LengthType;
   minLenght?: LengthType;
   readOnly?: boolean;
   disabled?: boolean;
+  cols?: number;
+  rows?: number;
 }
 ```

@@ -2,7 +2,7 @@
   "name": "easy-kit-component",
   "type": "module",
   "description": "Simple component kit for Vue 3",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Domenico 'Dvalin' Tenace <domenicotenace99@gmail.com> (https://linktr.ee/domenicotenace)",
   "repository": {
     "type": "git",

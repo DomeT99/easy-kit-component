@@ -1,10 +1,10 @@
 ---
 prev:
-  text: "ECheckbox"
-  link: "/guide/components/echeckbox.md"
+  text: "EDatePicker"
+  link: "/guide/components/edatepicker.md"
 next:
-  text: "ERadio"
-  link: "/guide/components/eradio.md"
+  text: "ETextArea"
+  link: "/guide/components/etextarea.md"
 ---
 
 <script setup lang="ts">

@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "EText"
-  link: "/guide/components/etext.md"
+  text: "ETextArea"
+  link: "/guide/components/etextarea.md"
 next:
   text: "ESelect"
   link: "/guide/components/eselect.md"

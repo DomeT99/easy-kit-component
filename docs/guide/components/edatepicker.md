@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "ECheckbox"
-  link: "/guide/components/echeckbox.md"
+  text: "EColorPicker"
+  link: "/guide/components/ecolorpicker.md"
 next:
   text: "EText"
   link: "/guide/components/etext.md"

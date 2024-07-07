@@ -3,8 +3,8 @@ prev:
   text: "EButton"
   link: "/guide/components/ebutton.md"
 next:
-  text: "EText"
-  link: "/guide/components/etext.md"
+  text: "EColorPicker"
+  link: "/guide/components/ecolorpicker.md"
 ---
 
 <script setup lang="ts">

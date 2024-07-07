@@ -40,6 +40,7 @@ export default defineConfig({
         items: [
           { text: "EButton", link: "../components/ebutton.md" },
           { text: "ECheckbox", link: "../components/echeckbox.md" },
+          { text: "EDatePicker", link: "../components/edatepicker.md" },
           { text: "EText", link: "../components/etext.md" },
           { text: "ETextArea", link: "../components/etextarea.md" },
           { text: "ERadio", link: "../components/eradio.md" },

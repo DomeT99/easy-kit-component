@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { OramaPlugin } from "@orama/plugin-vitepress";
 
 export default defineConfig({
   title: "Easy Kit Component",
@@ -56,6 +57,12 @@ export default defineConfig({
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2022-present Domenico Tenace",
+    },
+  },
+  extends: {
+    vite: {
+      //@ts-ignore
+      plugins: [OramaPlugin()],
     },
   },
 });

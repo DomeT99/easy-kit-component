@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useUpdateModelText } from "../../../composables/useUpdateModelValue";
 
-type LengthType = number | null;
-
 interface Text {
   placeHolder?: string;
-  maxLength?: LengthType;
-  minLenght?: LengthType;
+  maxLength?: number | null;
+  minLength?: number | null;
   readOnly?: boolean;
   disabled?: boolean;
 }
@@ -19,7 +17,7 @@ const emit = defineEmits();
   <input
     type="text"
     @input="useUpdateModelText($event, emit)"
-    :minlength="props.minLenght!"
+    :minlength="props.minLength!"
     :maxlength="props.maxLength!"
     :readonly="props.readOnly"
     :placeholder="props.placeHolder"

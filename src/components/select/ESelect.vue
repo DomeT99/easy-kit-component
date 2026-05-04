@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { watch } from "vue";
+import { ref, watch } from "vue";
 
 interface Select {
   placeHolder?: string;
@@ -10,11 +10,16 @@ interface Select {
 }
 
 const props = defineProps<Select>();
+const emit = defineEmits();
 
-let selectedValue = props.value ?? null;
+const selectedValue = ref(props.value ?? null);
 
 watch(selectedValue, (newValue) => {
-  selectedValue = newValue;
+  emit("update:modelValue", newValue);
+});
+
+watch(() => props.value, (newValue) => {
+  selectedValue.value = newValue ?? null;
 });
 </script>
 

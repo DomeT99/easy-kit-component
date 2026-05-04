@@ -1,8 +1,6 @@
 <script setup lang="ts">
-type ButtonType = "button" | "submit" | "reset";
-
 interface Button {
-  type?: ButtonType;
+  type?: "button" | "submit" | "reset";
   disabled?: boolean;
   formId?: string;
   autoFocus?: boolean;

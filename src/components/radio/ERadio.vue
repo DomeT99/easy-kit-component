@@ -9,15 +9,13 @@ interface Radio {
 
 const props = defineProps<Radio>();
 const emit = defineEmits();
-
-let selectedValue = props.value;
 </script>
 
 <template>
   <label :for="props.name">
     <input
       type="radio"
-      @change="useUpdateModelRadiobox(selectedValue, emit)"
+      @change="useUpdateModelRadiobox(props.value, emit)"
       :disabled="props.disabled"
       :name="props.name"
     />

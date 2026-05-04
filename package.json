@@ -48,5 +48,6 @@
     "vitepress": "^1.2.3",
     "vitest": "^4.1.5",
     "vue-tsc": "^3.2.8"
-  }
+  },
+  "packageManager": "pnpm@10.28.1"
 }
